@@ -1,4 +1,4 @@
-# Go Webhook
+# Webhook
 A very simple webhook app written in go(golang). It listens for HTTP requests with a specified URL and when one occurs, runs a specified command (typically a bash script). `stdout` + `stderr` will be returned in the response.
 
 ## Arguments
@@ -25,4 +25,9 @@ go build .
 Build for linux amd64
 ```bash
 env GOOS=linux GOARCH=amd64 go build -o webhook_linux_x64
+```
+
+Build for all release platforms
+```bash
+./build-all.sh
 ```
